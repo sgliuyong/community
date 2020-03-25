@@ -3,6 +3,7 @@
 [spring文档](https://spring.io/guides/gs/serving-web-content/)
 [ui框架地址](https://v3.bootcss.com/getting-started/)
 [网络请求框架](https://square.github.io/okhttp/)
+[github之API登录文档](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
 ##工具
 idea
 git
@@ -26,4 +27,11 @@ status
 3.git commit --amend --no-edit
 3.git push
 
- 
+##github访问请求
+看github的api接口
+(https://github.com/settings/applications/new)
+1.新建github OAuth application
+填写 名字
+    主页地址（一般默认创建springboot的组织）
+2.创建成功后，上传图标
+具体流程看visio (C:\Users\a\Desktop\githupp登录博客时序图)
