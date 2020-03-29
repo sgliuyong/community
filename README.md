@@ -4,6 +4,7 @@
 [ui框架地址](https://v3.bootcss.com/getting-started/)
 [网络请求框架](https://square.github.io/okhttp/)
 [github之API登录文档](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
+[springboot整合mybatis资料](http://mybatis.org/spring/zh/getting-started.html)
 ##工具
 idea
 git
@@ -35,3 +36,4 @@ status
     主页地址（一般默认创建springboot的组织）
 2.创建成功后，上传图标
 具体流程看visio (C:\Users\a\Desktop\githupp登录博客时序图)
+
