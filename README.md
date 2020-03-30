@@ -28,6 +28,12 @@ status
 3.git commit --amend --no-edit
 3.git push
 
+##如果github与本地文件不一致
+1.执行git pull 拉取
+2.shift+: x
+3.git push
+
+
 ##github访问请求
 看github的api接口
 (https://github.com/settings/applications/new)

@@ -44,17 +44,21 @@ public class AuthorizeController {
 
         if (githubUser != null) {
             User user=new User();
-
+            //登录成功写Session
             user.setToken(UUID.randomUUID().toString());
             user.setName(githubUser.getName());
             user.setAccountId(String.valueOf(githubUser.getId() ));
             user.setGmtCreate(System.currentTimeMillis());
             user.setGmtMoified(user.getGmtCreate());
             userMapper.insert(user);
+
+          //登录成功写cookie
             request.getSession().setAttribute("user", githubUser);
 
+
+
             return "redirect:/";
-            //登录成功写cookie和session
+
 
         } else {
             //登录失败，重新登录
