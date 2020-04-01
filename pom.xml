@@ -20,30 +20,48 @@
 
 
     <dependencies>
+        <!--flyway-->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>5.2.1</version>
+        </dependency>
 
-
+        <!--flyway-->
         <!--整合myibats-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.0.0</version>
         </dependency>
-
+        <!--整合myibats-->
 
         <!-- MySQL 连接驱动依赖 -->
+
+       <!--支持数据库连接池-->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jdbc</artifactId>
+            <version>9.0.30</version>
+        </dependency>
+        <!--支持数据库连接池-->
+
+        <!--添加 mysql 数据库的驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.39</version>
         </dependency>
+        <!--添加 mysql 数据库的驱动-->
 
-
+        <!--启用数据源的自动配置-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.4.RELEASE</version>
         </dependency>
-
+        <!--启用数据源的自动配置-->
+        <!-- MySQL 连接驱动依赖 -->
 
         <!--配置oracle-->
         <dependency>
@@ -57,8 +75,6 @@
             <artifactId>orai18n</artifactId>
             <version>19.3.0.0</version>
         </dependency>
-
-
 
 
         <dependency>
@@ -120,6 +136,14 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <!--flayway-->
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>5.2.1</version>
+            </plugin>
+            <!--flayway-->
         </plugins>
     </build>
 
