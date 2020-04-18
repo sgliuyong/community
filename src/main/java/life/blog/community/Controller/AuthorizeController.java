@@ -46,7 +46,7 @@ public class AuthorizeController {
         GithubUser githubUser = gitHubProvide.getUser(accessToken);
         //System.out.println(githubUser.getName());
 
-        if (githubUser != null) {
+        if (githubUser != null&&githubUser.getId() !=null) {
             User user=new User();
             //登录成功写Session
 
@@ -59,11 +59,7 @@ public class AuthorizeController {
             userMapper.insert(user);//存储数据库
             //登录成功写cookie
             response.addCookie(new Cookie("token", token));
-
      //    request.getSession().setAttribute("user", githubUser);
-
-
-
             return "redirect:/";
 
 

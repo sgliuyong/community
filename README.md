@@ -5,6 +5,8 @@
 [网络请求框架](https://square.github.io/okhttp/)
 [github之API登录文档](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
 [springboot整合mybatis资料](http://mybatis.org/spring/zh/getting-started.html)
+[flyway网址]
+[lambok](https://projectlombok.org/)
 ##工具
 idea
 git
@@ -45,14 +47,4 @@ status
 
 
 
-##sql脚本
-create table t_es_user
-(
-  ID           int auto_increment
-    primary key,
-  NAME         varchar(50) collate utf8_bin  null,
-  ACCOUNT_ID   varchar(100) collate utf8_bin null,
-  TOKEN        char(36)                      null,
-  GMT_CREATE   bigint(11)                    null,
-  GMT_MODIFIED bigint(11)                    null
-);
+ 
